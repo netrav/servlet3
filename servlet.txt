@@ -1,0 +1,2 @@
+Welcome to Servlet 
+1)3 types of servlets
