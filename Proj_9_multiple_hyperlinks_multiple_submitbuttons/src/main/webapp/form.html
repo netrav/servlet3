@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Multiple Submit Buttons and Hyperlinks</title>
+    <style>
+        body {
+            background-color: cyan;
+        }
+        table {
+            margin: 0 auto;
+            background-color: pink;
+            padding: 10px;
+        }
+        h1 {
+            color: red;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <h1>Working with Multiple Submit Buttons and Multiple Hyperlinks</h1>
+
+    <form action="/Proj_9_multiple_hyperlinks_multiple_submitbuttons/processurl" method="POST">
+        <table>
+            <tr>
+                <td>Value1:</td>
+                <td><input type="text" name="t1"></td>
+            </tr>
+            <tr>
+                <td>Value2:</td>
+                <td><input type="text" name="t2"></td>
+            </tr>
+            <tr>
+                <td><input type="submit" value="add" name="s1"></td>
+                <td>
+                    <input type="submit" value="sub" name="s1">
+                    <a href="/Proj_9_multiple_hyperlinks_multiple_submitbuttons/processurl?s1=link1">Sys Properties</a>
+                </td>
+            </tr>
+            <tr>
+                <td><input type="submit" value="mul" name="s1"></td>
+                <td>
+                    <input type="submit" value="div" name="s1">
+                    <a href="/Proj_9_multiple_hyperlinks_multiple_submitbuttons/processurl?s1=link2">Sys Date & Time</a>
+                </td>
+            </tr>
+        </table>
+    </form>
+</body>
+</html>
