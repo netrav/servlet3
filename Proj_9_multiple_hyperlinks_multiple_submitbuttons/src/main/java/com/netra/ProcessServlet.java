@@ -34,7 +34,7 @@ public class ProcessServlet extends HttpServlet {
 		else if(s1Val.equalsIgnoreCase("mul"))
 			pw.println("<h1> mul of "+val1+" and "+val2+" is ::"+(val1*val2)+"</h1>");
 		else if(s1Val.equalsIgnoreCase("div"))
-			pw.println("<h1> div of "+val1+" and "+val2+" is ::"+((float)(val1/val2))+"</h1>");
+			pw.println("<h1> div of "+val1+" and "+val2+" is ::"+((float)val1/val2)+"</h1>");
 		else if(s1Val.equalsIgnoreCase("link1")) {
 			pw.println("<h1>System Properties are :: </h1>");
 		    pw.println("<b>"+System.getProperties());
